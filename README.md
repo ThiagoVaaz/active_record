@@ -1,5 +1,5 @@
 # active_record
-<h1>Active record com PHPOO</h1>
+<h2>Active record com PHPOO</h2>
 <ul>
     <li>Para rodar o projeto: </li>
         <ul>
