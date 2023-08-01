@@ -1,0 +1,17 @@
+{
+    "name": "thcvz/active-record",
+    "description": "active record com PHPOO",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "ThiagoVaaz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    }
+}
