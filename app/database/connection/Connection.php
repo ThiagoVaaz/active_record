@@ -17,7 +17,7 @@ class Connection
             throw new ConnectionException('A conexão já foi estabelecida');
         }
         $config = (object) Bind::get('config')->database;
-        $pdo = new PDO("pgsql:host=$config->host;dbname=$config->dbname;", $config->username, $config->password, $config->options);
+        $pdo = new PDO("mysql:host=$config->host;dbname=$config->dbname;charset=$config->charset", $config->username, $config->password, $config->options);
         return $pdo;
-    }
+    }   
 }

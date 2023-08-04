@@ -1,9 +1,12 @@
 <?php
 require '../bootstrap.php';
 
-use app\database\activeRecord\Insert;
 use app\database\models\User;
+use app\database\activeRecord\FindBy;
+use app\database\activeRecord\FindAll;
+use app\database\activeRecord\Insert;
 use app\database\activeRecord\Update;
+use app\database\activeRecord\Delete;
 use app\database\connection\Connection;
 use app\database\activeRecord\UpdateUser;
 
@@ -12,6 +15,6 @@ use app\database\activeRecord\UpdateUser;
 $user = new User;
 $user->firstName = 'Thiago';
 $user->lastName = 'Vaz';
-$user->id = 1;
+//$user->email = 'thiago@thiago.com';
 
-echo $user->execute(new Update);
+var_dump($user->execute(New FindAll(fields:'firstName,lastName')));
